@@ -4721,7 +4721,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240716" nPages="1" signature="rusEFI main.2024.07.22.XYZ.250038079" version="5.0"/>
+    <versionInfo firmwareInfo="20240716" nPages="1" signature="rusEFI main.2024.07.23.hellen-f4-community.250038079" version="5.0"/>
     <bibliography author="rusEFI 20240716" writeDate="date"/>
     <settings/>
     <userComments/>
