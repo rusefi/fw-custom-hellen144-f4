@@ -1,19 +1,12 @@
 #include "pch.h"
-
-Gpio getCommsLedPin() {
-	return Gpio::Unassigned;
-}
-
-Gpio getRunningLedPin() {
-	return Gpio::Unassigned;
-}
-
-Gpio getWarningLedPin() {
-	return Gpio::Unassigned;
-}
+#include "hellen_meta.h"
+#include "defaults.h"
 
 // board-specific configuration setup
 void setBoardDefaultConfiguration() {
+    setHellenVbatt();
+    setHellenCan();
+    setDefaultHellenAtPullUps();
     // engineConfiguration->injectionPins[0] = Gpio::F13;
     // engineConfiguration->ignitionPins[0] = Gpio::E15;
 
