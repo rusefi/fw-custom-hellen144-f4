@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"Disabled"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.024083E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0240831E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4790,8 +4790,8 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240828" nPages="1" signature="rusEFI main.2024.08.30.hellen-f4-community.290447699" version="5.0"/>
-    <bibliography author="rusEFI 20240828" writeDate="date"/>
+    <versionInfo firmwareInfo="20240830" nPages="1" signature="rusEFI main.2024.08.31.hellen-f4-community.509175560" version="5.0"/>
+    <bibliography author="rusEFI 20240830" writeDate="date"/>
     <settings/>
     <userComments/>
 </msq>
