@@ -27,11 +27,4 @@ void setBoardDefaultConfiguration() {
 //    	engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
 
 //	engineConfiguration->adcVcc = 3.3f;
-
-//	engineConfiguration->clt.config.bias_resistor = 2490;
-//	engineConfiguration->iat.config.bias_resistor = 2490;
-
-
-	// Battery sense on PA0
-//	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
 }
