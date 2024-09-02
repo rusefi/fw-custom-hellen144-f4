@@ -5,16 +5,16 @@
 
 
 static void setInjectorPins() {
-	engineConfiguration->injectionPins[0] = Gpio::H144_INJ1;
-	engineConfiguration->injectionPins[1] = Gpio::H144_INJ2;
-	engineConfiguration->injectionPins[2] = Gpio::H144_INJ3;
-	engineConfiguration->injectionPins[3] = Gpio::H144_INJ4;
-	engineConfiguration->injectionPins[4] = Gpio::H144_INJ5;
-	engineConfiguration->injectionPins[5] = Gpio::H144_INJ6;
+	engineConfiguration->injectionPins[0] = H144_INJ1;
+	engineConfiguration->injectionPins[1] = H144_INJ2;
+	engineConfiguration->injectionPins[2] = H144_INJ3;
+	engineConfiguration->injectionPins[3] = H144_INJ4;
+	engineConfiguration->injectionPins[4] = H144_INJ5;
+	engineConfiguration->injectionPins[5] = H144_INJ6;
 }
 
 static void setIgnitionPins() {
-	engineConfiguration->ignitionPins[0] = Gpio::MM144_IGN7;
+	engineConfiguration->ignitionPins[0] = H144_IGN7;
 	engineConfiguration->ignitionPins[1] = Gpio::Unassigned;
 	engineConfiguration->ignitionPins[2] = Gpio::Unassigned;
 	engineConfiguration->ignitionPins[3] = Gpio::Unassigned;
