@@ -32,6 +32,8 @@ static void setupDefaultSensorInputs() {
 	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::F11;
 	engineConfiguration->triggerInputPins[0] = Gpio::B1;
 	engineConfiguration->camInputs[0] = Gpio::A6;
+	engineConfiguration->clutchDownPin = Gpio::F5;
+	engineConfiguration->clutchDownPinMode = PI_PULLDOWN;
  	
   	//engineConfiguration->map.sensor.hwChannel = Gpio::Unassigned;
 	//setPPSInputs(Gpio::Unassigned, Gpio::Unassigned);
@@ -65,7 +67,7 @@ void setBoardConfigOverrides() {
 void setBoardDefaultConfiguration() {
 	setInjectorPins();
 	setIgnitionPins();
-	//setupDefaultSensorInputs();
+	setupDefaultSensorInputs();
 	setHellenMMbaro();
 
 	engineConfiguration->displayLogicLevelsInEngineSniffer = true;
@@ -76,18 +78,17 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->ignitionMode = IM_ONE_COIL;
 	engineConfiguration->fuelAlgorithm = LM_REAL_MAF;
 	//setAlgorithm(LM_SPEED_DENSITY);
-	//engineConfiguration->canTxPin = Gpio::H144_CAN_TX;
-	//engineConfiguration->canRxPin = Gpio::H144_CAN_RX;
-	//engineConfiguration->mainRelayPin = Gpio::H144_IGN7; //E10
- 	//engineConfiguration->fanPin = Gpio::H144_OUT_IO13; //G6
-	//engineConfiguration->fuelPumpPin = Gpio::H144_OUT_IO8; //G4
-	//engineConfiguration->idle.solenoidPin = Gpio::H144_OUT_IO7; //G3
-	//engineConfiguration->tachOutputPin = Gpio::F13;
-	//engineConfiguration->clutchDownPin = Gpio::F5; // Clutch switch input
-	//engineConfiguration->clutchDownPinMode = PI_PULLDOWN;
+	engineConfiguration->canTxPin = Gpio::D1;
+	engineConfiguration->canRxPin = Gpio::D0;
+	engineConfiguration->mainRelayPin = Gpio::E10;
+ 	engineConfiguration->fanPin = Gpio::G6;
+	engineConfiguration->fuelPumpPin = Gpio::G4;
+	engineConfiguration->idle.solenoidPin = Gpio::G3;
+	engineConfiguration->tachOutputPin = Gpio::F13;
 	engineConfiguration->enableVerboseCanTx = true;
-	// Some sensible defaults for other options
+
 	setCrankOperationMode();
+	
 	engineConfiguration->injectorCompensationMode = ICM_FixedRailPressure;
 	setCommonNTCSensor(&engineConfiguration->clt, HELLEN_DEFAULT_AT_PULLUP);
 	setCommonNTCSensor(&engineConfiguration->iat, HELLEN_DEFAULT_AT_PULLUP);
