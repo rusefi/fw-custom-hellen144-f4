@@ -75,7 +75,7 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->enableSoftwareKnock = true;
 	engineConfiguration->cylindersCount = 6;
 	engineConfiguration->firingOrder = FO_1_4_2_5_3_6;
-	engineConfiguration->ignitionMode = IM_SINGLE_POINT;
+	engineConfiguration->ignitionMode = IM_ONE_COIL;
 	engineConfiguration->fuelAlgorithm = LM_REAL_MAF;
 	//setAlgorithm(LM_SPEED_DENSITY);
 	//engineConfiguration->canTxPin = Gpio::H144_CAN_TX;
