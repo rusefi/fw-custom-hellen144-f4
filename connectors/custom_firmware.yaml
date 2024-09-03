@@ -168,7 +168,7 @@ pins:
     type: cruise inputs
 
   - pin: A29
-    id: A0
+    id: EFI_ADC_0
     class: analog_inputs
     ts_name: A29 HEGO 1 (Rear)
     function: HEGO 1 (Rear)
@@ -244,7 +244,7 @@ pins:
     function: PPS2
 
   - pin: A43
-    id: A1
+    id: EFI_ADC_1
     class: analog_inputs
     ts_name: A43 HEGO 2 (Front)
     function: HEGO 2 (Front)
@@ -257,7 +257,7 @@ pins:
     function: PPS
 
   - pin: A45
-    id: C0
+    id: EFI_ADC_10
     class: analog_inputs
     ts_name: A45 BAP
     function: BAP
