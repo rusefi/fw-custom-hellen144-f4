@@ -141,7 +141,7 @@ pins:
 
   - pin: A24
     id: A6
-    class: [event_inputs, analog_inputs]
+    class: event_inputs
     ts_name: A24 Cam Sensor (CID)
     function: Cam Sensor (CID)
     type: 
@@ -318,7 +318,7 @@ pins:
 
   - pin: A56
     id: B1
-    class: [event_inputs, analog_inputs]
+    class: event_inputs
     ts_name: A56 PIP
     function: PIP
     type: ign
