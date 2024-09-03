@@ -1,14 +1,12 @@
 pins:
   - pin: A1
     function: 12V all times
-    type: 12V
 
   - pin: A2
     id: F3
     class: switch_inputs
     ts_name: A2 Power Steering Switch
     function: Power Steering Switch
-    type: din
 
   - pin: A3
     id: F11
@@ -33,14 +31,12 @@ pins:
 
   - pin: A6
     function: VSS-
-    type: gnd
 
   - pin: A7
     id: EFI_ADC_12
     class: analog_inputs
     ts_name: A7 Engine Coolant Temperature (CLT)
     function: Engine Coolant Temperature (CLT)
-    type: temp input
 
   - pin: A8
     id: EFI_ADC_20
@@ -51,7 +47,6 @@ pins:
 
   - pin: A9
     function: MAF Ground
-    type: gnd
 
   - pin: A10
     id: C7
@@ -59,81 +54,68 @@ pins:
     ts_name: A10 AC Clutch
     function: AC Clutch
 
-
   - pin: A11
     function: Speed Control Solenoid
-    type: 12V
 
   - pin: A12
     id: D11
     class: outputs
     ts_name: A12 Injector 3
     function: Injector 3
-    type: inj
 
   - pin: A13
     id: D10
     class: outputs
     ts_name: A13 Injector 4
     function: Injector 4
-    type: inj
 
   - pin: A14
     id: D9
     class: outputs
     ts_name: A14 Injector 5
     function: Injector 5
-    type: inj
 
   - pin: A15
     id: F12
     class: outputs
     ts_name: A15 Injector 6
     function: Injector 6
-    type: inj
 
   - pin: A16
     function: Ignition Ground
-    type: gnd
 
   - pin: A17
     function: VIP Test (MIL)
-
 
   - pin: A18
     id: EFI_ADC_8
     class: analog_inputs
     ts_name: A18 Octane Adjust (Flex)
     function: Octane Adjust (Flex)
-    type: octane sensor
 
   - pin: A19
     id: C9
     class:  outputs
     ts_name: A19 Fuel Pump Monitor
     function: Fuel Pump Monitor
-    type: fuel pump
 
   - pin: A20
     function: Case Ground
-    type: gnd
 
   - pin: A21
     id: G3
     class: outputs
     ts_name: A21 Idle (IAC)
     function: IAC
-    type: ls
 
   - pin: A22
     id: G5
     class: outputs
     ts_name: A22 Low Speed Fuel Pump
     function: Low Speed Fuel Pump
-    type: ls
 
   - pin: A23
-    id: EFI_ADC_33
+    id EFI_ADC_33
     class: analog_inputs
     ts_name: A23 Knock Sensor
     function: Knock Sensor
@@ -142,100 +124,82 @@ pins:
     id: A6
     class: event_inputs
     ts_name: A24 Cam Sensor (CID)
-    function: Cam Sensor (CID)
-    type: 
+    function: Cam Sensor (CID) 
 
   - pin: A25
     id: EFI_ADC_13
     class: analog_inputs
     ts_name: A25 Intake Air Temp (IAT)
     function: Intake Air Temp (IAT)
-    type: temp input
 
   - pin: A26
     function: VREF
-    type: 5V
 
   - pin: A27
-    function: Pressure Feedback EGR Sensor (NC)
-    type: NC
+    function: Pressure Feedback EGR Sensor (NC) 
 
   - pin: A28
     id: EFI_ADC_32
     class: analog_inputs
     ts_name: A28 Speed Control Command Switch
     function: Speed Control Command Switch
-    type: cruise inputs
 
   - pin: A29
     id: EFI_ADC_0
     class: analog_inputs
     ts_name: A29 HEGO 1 (Rear)
     function: HEGO 1 (Rear)
-    type: narrowbands
 
   - pin: A30
     id: F5
     class: switch_inputs
-    ts_name: A30 Tunerstudio Name
+    ts_name: A30 Clutch Switch
     function: Clutch Switch Input
-    type: din
 
   - pin: A31
-    function: Canister Purge Solenoid (NC)
-    type: NC
+    function: Canister Purge Solenoid (NC) 
 
   - pin: A32
     id: G14
     class: outputs
-    ts_name: A32 Tunerstudio Name
+    ts_name: A32 IMRC
     function: IMRC
-    type: ls
 
   - pin: A33
     function: EGR Valve Regulator Solenoid (NC)
-    type: NC
 
   - pin: A34
     function: DC1-
-    type: etb
 
   - pin: A35
     id: C6
     class: outputs
-    ts_name: A35 Tunerstudio Name
+    ts_name: A35 Speed Control Vent Solenoid
     function: Speed Control Vent Solenoid
-    type: cruise outputs
 
   - pin: A36
     id: B9
     class: outputs
     ts_name: A36 SPOUT
     function: SPOUT
-    type: ign
 
   - pin: A37
     function: 12V in Start and Run
-    type: 12V
 
   - pin: A38
     function: DC1+
-    type: etb
 
   - pin: A39
     function: Speed Control Command Switch Ground
-    type: gnd
 
   - pin: A40
     function: Power Ground
-    type: gnd
 
   - pin: A41
     id: G4
     class: outputs
     ts_name: A41 HFP
     function: HFP
-    type: ls
 
   - pin: A42
     id: EFI_ADC_19
@@ -248,7 +212,6 @@ pins:
     class: analog_inputs
     ts_name: A43 HEGO 2 (Front)
     function: HEGO 2 (Front)
-    type: narrowband
 
   - pin: A44
     id: EFI_ADC_3
@@ -261,11 +224,9 @@ pins:
     class: analog_inputs
     ts_name: A45 BAP
     function: BAP
-    type: pressure sensor
 
   - pin: A46
     function: Signal Return
-    type: gnd
 
   - pin: A47
     id: EFI_ADC_4
@@ -278,29 +239,24 @@ pins:
 
   - pin: A49
     function: HEGO Sensor Ground
-    type: gnd
 
   - pin: A50
     id: EFI_ADC_14
     class: analog_inputs
     ts_name: A50 Mass Air Sensor (MAF)
-    function: Mass Air Sensor (MAF)
-    type: flow sensor
+    function: Mass Air Sensor (MAF) 
 
   - pin: A51
     id: C8
     class: outputs
     ts_name: A51 Speed Control Vacuum Solenoid
     function: Speed Control Vacuum Solenoid
-    type: cruise outputs
 
   - pin: A52
     function: DC2-
-    type: etb
 
   - pin: A53
     function: DC2+
-    type: etb
 
   - pin: A54
     id: A8
@@ -313,33 +269,27 @@ pins:
     class: outputs
     ts_name: A55 FAN
     function: FAN
-    type: ls
 
   - pin: A56
     id: B1
     class: event_inputs
     ts_name: A56 PIP
     function: PIP
-    type: ign
 
   - pin: A57
     function: 12V in Start and Run
-    type: 12V
 
   - pin: A58
     id: G7
     class:  outputs
     ts_name: A58 Injector 1
     function: Injector 1
-    type: inj
 
   - pin: A59
     id: G8
     class:  outputs
     ts_name: A59 Injector 2
     function: Injector 2
-    type: inj
 
   - pin: A60
     function: Power Ground
-    type: gnd
