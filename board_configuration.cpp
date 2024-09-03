@@ -65,8 +65,9 @@ void setBoardConfigOverrides() {
 }
 
 void setBoardDefaultConfiguration() {
-	setInjectorPins();
-	setIgnitionPins();
+	//setInjectorPins();
+	//setIgnitionPins();
+	//setupDefaultSensorInputs();
 	setHellenMMbaro();
 
 	engineConfiguration->displayLogicLevelsInEngineSniffer = true;
@@ -75,6 +76,8 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->cylindersCount = 6;
 	engineConfiguration->firingOrder = FO_1_4_2_5_3_6;
 	engineConfiguration->ignitionMode = IM_SINGLE_POINT;
+	engineConfiguration->fuelAlgorithm = LM_REAL_MAF;
+	//setAlgorithm(LM_SPEED_DENSITY);
 	//engineConfiguration->canTxPin = Gpio::H144_CAN_TX;
 	//engineConfiguration->canRxPin = Gpio::H144_CAN_RX;
 	//engineConfiguration->mainRelayPin = Gpio::H144_IGN7; //E10
@@ -84,13 +87,9 @@ void setBoardDefaultConfiguration() {
 	//engineConfiguration->tachOutputPin = Gpio::F13;
 	//engineConfiguration->clutchDownPin = Gpio::F5; // Clutch switch input
 	//engineConfiguration->clutchDownPinMode = PI_PULLDOWN;
-
-	// "required" hardware is done - set some reasonable defaults
-	setupDefaultSensorInputs();
 	engineConfiguration->enableVerboseCanTx = true;
 	// Some sensible defaults for other options
 	setCrankOperationMode();
-	setAlgorithm(LM_SPEED_DENSITY);
 	engineConfiguration->injectorCompensationMode = ICM_FixedRailPressure;
 	setCommonNTCSensor(&engineConfiguration->clt, HELLEN_DEFAULT_AT_PULLUP);
 	setCommonNTCSensor(&engineConfiguration->iat, HELLEN_DEFAULT_AT_PULLUP);
