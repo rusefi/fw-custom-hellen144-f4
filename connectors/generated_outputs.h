@@ -4,40 +4,40 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
-	Gpio::F13, // A4 Tacho (IDM)
-	Gpio::C7, // A10 AC Clutch
-	Gpio::D11, // A12 Injector 3
-	Gpio::D10, // A13 Injector 4
-	Gpio::D9, // A14 Injector 5
-	Gpio::F12, // A15 Injector 6
-	Gpio::C9, // A19 Fuel Pump Monitor
-	Gpio::G3, // A21 Idle (IAC)
-	Gpio::G5, // A22 Low Speed Fuel Pump
-	Gpio::G14, // A32 IMRC
-	Gpio::C6, // A35 Speed Control Vent Solenoid
-	Gpio::B9, // A36 SPOUT
-	Gpio::G4, // A41 HFP
-	Gpio::C8, // A51 Speed Control Vacuum Solenoid
-	Gpio::A8, // A54 WOT Cutout Relay
-	Gpio::G6, // A55 FAN
-	Gpio::G7, // A58 Injector 1
-	Gpio::G8, // A59 Injector 2
-// "A4 Tacho (IDM)",
-// "A10 AC Clutch",
-// "A12 Injector 3",
-// "A13 Injector 4",
-// "A14 Injector 5",
-// "A15 Injector 6",
-// "A19 Fuel Pump Monitor",
-// "A21 Idle (IAC)",
-// "A22 Low Speed Fuel Pump",
-// "A32 IMRC",
-// "A35 Speed Control Vent Solenoid",
-// "A36 SPOUT",
-// "A41 HFP",
-// "A51 Speed Control Vacuum Solenoid",
-// "A54 WOT Cutout Relay",
-// "A55 FAN",
-// "A58 Injector 1",
-// "A59 Injector 2",
+	Gpio::F13, // EECIV 4 Tacho (IDM)
+	Gpio::C7, // EECIV 10 AC Clutch
+	Gpio::D11, // EECIV 12 Injector 3
+	Gpio::D10, // EECIV 13 Injector 4
+	Gpio::D9, // EECIV 14 Injector 5
+	Gpio::F12, // EECIV 15 Injector 6
+	Gpio::C9, // EECIV 19 Fuel Pump Monitor
+	Gpio::G3, // EECIV 21 Idle (IAC)
+	Gpio::G5, // EECIV 22 Low Speed Fuel Pump
+	Gpio::G14, // EECIV 32 IMRC
+	Gpio::C6, // EECIV 35 Speed Control Vent Solenoid
+	Gpio::B9, // EECIV 36 SPOUT
+	Gpio::G4, // EECIV 41 High Speed Fuel Pump
+	Gpio::C8, // EECIV 51 Speed Control Vacuum Solenoid
+	Gpio::A8, // EECIV 54 WOT Cutout Relay
+	Gpio::G6, // EECIV 55 FAN
+	Gpio::G7, // EECIV 58 Injector 1
+	Gpio::G8, // EECIV 59 Injector 2
+// "EECIV 4 Tacho (IDM)",
+// "EECIV 10 AC Clutch",
+// "EECIV 12 Injector 3",
+// "EECIV 13 Injector 4",
+// "EECIV 14 Injector 5",
+// "EECIV 15 Injector 6",
+// "EECIV 19 Fuel Pump Monitor",
+// "EECIV 21 Idle (IAC)",
+// "EECIV 22 Low Speed Fuel Pump",
+// "EECIV 32 IMRC",
+// "EECIV 35 Speed Control Vent Solenoid",
+// "EECIV 36 SPOUT",
+// "EECIV 41 High Speed Fuel Pump",
+// "EECIV 51 Speed Control Vacuum Solenoid",
+// "EECIV 54 WOT Cutout Relay",
+// "EECIV 55 FAN",
+// "EECIV 58 Injector 1",
+// "EECIV 59 Injector 2",
 }
