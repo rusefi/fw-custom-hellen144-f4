@@ -18,14 +18,14 @@ pins:
 
 
   - pin: A4
-    id: MCU
+    id: F13
     class: outputs
     ts_name: A4 Tacho (IDM)
     function: Tacho (IDM)
 
 
   - pin: A5
-    id: MCU
+    id: F4
     class: switch_inputs
     ts_name: A5 Brake Switch Input
     function: Brake Switch Input
@@ -43,7 +43,7 @@ pins:
     type: temp input
 
   - pin: A8
-    id: MCU
+    id: EFI_ADC_20
     class: analog_inputs
     ts_name: A8 TPS2
     function: TPS2
@@ -54,7 +54,7 @@ pins:
     type: gnd
 
   - pin: A10
-    id: MCU
+    id: F5
     class: outputs
     ts_name: A10 AC Clutch
     function: AC Clutch
@@ -65,28 +65,28 @@ pins:
     type: 12V
 
   - pin: A12
-    id: MCU
+    id: D11
     class: outputs
     ts_name: A12 Injector 3
     function: Injector 3
     type: inj
 
   - pin: A13
-    id: MCU
+    id: D10
     class: outputs
     ts_name: A13 Injector 4
     function: Injector 4
     type: inj
 
   - pin: A14
-    id: MCU
+    id: D9
     class: outputs
     ts_name: A14 Injector 5
     function: Injector 5
     type: inj
 
   - pin: A15
-    id: MCU
+    id: F12
     class: outputs
     ts_name: A15 Injector 6
     function: Injector 6
@@ -97,60 +97,57 @@ pins:
     type: gnd
 
   - pin: A17
-    id: MCU
-    class: outputs
-    ts_name: A17 VIP Test (MIL)
     function: VIP Test (MIL)
 
 
   - pin: A18
-    id: MCU
+    id: EFI_ADC_8
     class: analog_inputs
     ts_name: A18 Octane Adjust (Flex)
     function: Octane Adjust (Flex)
     type: octane sensor
 
   - pin: A19
-    id: MCU
-    class:  analog_inputs
+    id: c9
+    class:  outputs
     ts_name: A19 Fuel Pump Monitor
     function: Fuel Pump Monitor
-    type: fuel pump sensor
+    type: fuel pump
 
   - pin: A20
     function: Case Ground
     type: gnd
 
   - pin: A21
-    id: MCU
+    id: G3
     class: outputs
     ts_name: A21 Idle (IAC)
     function: IAC
     type: ls
 
   - pin: A22
-    id: MCU
+    id: G5
     class: outputs
     ts_name: A22 Low Speed Fuel Pump
     function: Low Speed Fuel Pump
     type: ls
 
   - pin: A23
-    id: MCU
-    class:  
+    id: F7
+    class: inputs
     ts_name: A23 Knock Sensor
     function: Knock Sensor
     type: 
 
   - pin: A24
-    id: MCU
-    class:  
+    id: A6
+    class: inputs
     ts_name: A24 Cam Sensor (CID)
     function: Cam Sensor (CID)
     type: 
 
   - pin: A25
-    id: MCU
+    id: EFI_ADC_13
     class: analog_inputs
     ts_name: A25 Intake Air Temp (IAT)
     function: Intake Air Temp (IAT)
@@ -165,22 +162,22 @@ pins:
     type: NC
 
   - pin: A28
-    id: MCU
+    id: F6
     class: analog_inputs
     ts_name: A28 Speed Control Command Switch
     function: Speed Control Command Switch
     type: cruise inputs
 
   - pin: A29
-    id: MCU
+    id: A0
     class: analog_inputs
     ts_name: A29 HEGO 1 (Rear)
     function: HEGO 1 (Rear)
     type: narrowbands
 
   - pin: A30
-    id: MCU
-    class:  
+    id: F5
+    class: inputs
     ts_name: A30 Tunerstudio Name
     function: Clutch Switch Input
     type: din
@@ -190,7 +187,7 @@ pins:
     type: NC
 
   - pin: A32
-    id: MCU
+    id: G14
     class: outputs
     ts_name: A32 Tunerstudio Name
     function: IMRC
@@ -201,21 +198,18 @@ pins:
     type: NC
 
   - pin: A34
-    id: MCU
-    class: outputs
-    ts_name: A34 DC1-
     function: DC1-
     type: etb
 
   - pin: A35
-    id: MCU
-    class:  
+    id: C6
+    class: outputs
     ts_name: A35 Tunerstudio Name
     function: Speed Control Vent Solenoid
     type: cruise outputs
 
   - pin: A36
-    id: MCU
+    id: B9
     class: outputs
     ts_name: A36 SPOUT
     function: SPOUT
@@ -226,16 +220,10 @@ pins:
     type: 12V
 
   - pin: A38
-    id: MCU
-    class: outputs
-    ts_name: A38 DC1+
     function: DC1+
     type: etb
 
   - pin: A39
-    id: MCU
-    class:  
-    ts_name: A39 Tunerstudio Name
     function: Speed Control Command Switch Ground
     type: gnd
 
@@ -244,33 +232,33 @@ pins:
     type: gnd
 
   - pin: A41
-    id: MCU
+    id: G4
     class: outputs
     ts_name: A41 HFP
     function: HFP
     type: ls
 
   - pin: A42
-    id: MCU
+    id: EFI_ADC_19
     class: analog_inputs
     ts_name: A42 PPS2
     function: PPS2
 
   - pin: A43
-    id: MCU
+    id: A1
     class: analog_inputs
     ts_name: A43 HEGO 2 (Front)
     function: HEGO 2 (Front)
     type: narrowband
 
   - pin: A44
-    id: MCU
+    id: EFI_ADC_3
     class: analog_inputs
     ts_name: A44 PPS
     function: PPS
 
   - pin: A45
-    id: MCU
+    id: C0
     class: analog_inputs
     ts_name: A45 BAP
     function: BAP
@@ -281,15 +269,12 @@ pins:
     type: gnd
 
   - pin: A47
-    id: MCU
+    id: EFI_ADC_4
     class: analog_inputs
     ts_name: A47 Throttle Position Sensor
     function: Throttle Position Sensor
 
   - pin: A48
-    id: MCU
-    class:  
-    ts_name: A48 Self-Test Input Connector
     function: Self-Test Input Connector
 
   - pin: A49
@@ -297,49 +282,43 @@ pins:
     type: gnd
 
   - pin: A50
-    id: MCU
+    id: EFI_ADC_14
     class: analog_inputs
     ts_name: A50 Mass Air Sensor (MAF)
     function: Mass Air Sensor (MAF)
     type: flow sensor
 
   - pin: A51
-    id: MCU
-    class:  
+    id: C8
+    class: outputs
     ts_name: A51 Speed Control Vacuum Solenoid
     function: Speed Control Vacuum Solenoid
     type: cruise outputs
 
   - pin: A52
-    id: MCU
-    class: outputs
-    ts_name: A52 DC2-
     function: DC2-
     type: etb
 
   - pin: A53
-    id: MCU
-    class: outputs
-    ts_name: A53 DC2+
     function: DC2+
     type: etb
 
   - pin: A54
-    id: MCU
+    id: A8
     class: outputs
     ts_name: A54 WOT Cutout Relay
     function: WOT Cutout Relay
 
   - pin: A55
-    id: MCU
+    id: G6
     class: outputs
     ts_name: A55 FAN
     function: FAN
     type: ls
 
   - pin: A56
-    id: MCU
-    class: 
+    id: B1
+    class: inputs
     ts_name: A56 PIP
     function: PIP
     type: ign
@@ -349,14 +328,14 @@ pins:
     type: 12V
 
   - pin: A58
-    id: MCU
+    id: G7
     class:  outputs
     ts_name: A58 Injector 1
     function: Injector 1
     type: inj
 
   - pin: A59
-    id: MCU
+    id: G8
     class:  outputs
     ts_name: A59 Injector 2
     function: Injector 2
