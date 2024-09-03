@@ -108,7 +108,7 @@ pins:
     type: octane sensor
 
   - pin: A19
-    id: c9
+    id: C9
     class:  outputs
     ts_name: A19 Fuel Pump Monitor
     function: Fuel Pump Monitor
