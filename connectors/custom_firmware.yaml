@@ -115,7 +115,7 @@ pins:
     function: Low Speed Fuel Pump
 
   - pin: A23
-    id EFI_ADC_33
+    id: EFI_ADC_33
     class: analog_inputs
     ts_name: A23 Knock Sensor
     function: Knock Sensor
