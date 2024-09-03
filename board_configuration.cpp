@@ -3,16 +3,16 @@
 #include "defaults.h"
 //#include "hellen_leds_144.cpp"
 
-/*
+
 static void setInjectorPins() {
-	engineConfiguration->injectionPins[0] = H144_INJ1;
-	engineConfiguration->injectionPins[1] = H144_INJ2;
-	engineConfiguration->injectionPins[2] = H144_INJ3;
-	engineConfiguration->injectionPins[3] = H144_INJ4;
-	engineConfiguration->injectionPins[4] = H144_INJ5;
-	engineConfiguration->injectionPins[5] = H144_INJ6;
+	engineConfiguration->injectionPins[0] = Gpio::G7;
+	engineConfiguration->injectionPins[1] = Gpio::G8;
+	engineConfiguration->injectionPins[2] = Gpio::D11;
+	engineConfiguration->injectionPins[3] = Gpio::D10;
+	engineConfiguration->injectionPins[4] = Gpio::D9;
+	engineConfiguration->injectionPins[5] = Gpio::F12;
 }
-*/
+
 
 static void setIgnitionPins() {
 	engineConfiguration->ignitionPins[0] = Gpio::B9;
@@ -23,23 +23,21 @@ static void setIgnitionPins() {
 	engineConfiguration->ignitionPins[5] = Gpio::Unassigned;
 }
 
-/*
+
 static void setupDefaultSensorInputs() {
-	engineConfiguration->tps1_1AdcChannel = H144_IN_TPS_ANALOG;
-	engineConfiguration->tps1_2AdcChannel = H144_IN_AUX1_ANALOG;
-	engineConfiguration->map.sensor.hwChannel = Gpio::Unassigned;
-	engineConfiguration->mafAdcChannel = EFI_ADC_10;
-
-	setPPSInputs(Gpio::Unassigned, Gpio::Unassigned);
-
-	engineConfiguration->clt.adcChannel = H144_IN_CLT_ANALOG;
-	engineConfiguration->iat.adcChannel = H144_IN_IAT_ANALOG;
-
-	engineConfiguration->triggerInputPins[0] = Gpio::H144_IN_CRANK;
-	engineConfiguration->camInputs[0] = Gpio::H144_IN_CAM;
+	engineConfiguration->tps1_1AdcChannel = EFI_ADC_4;
+ 	engineConfiguration->clt.adcChannel = EFI_ADC_12;
+	engineConfiguration->iat.adcChannel = EFI_ADC_13;
+	engineConfiguration->mafAdcChannel = EFI_ADC_14;
+	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::F11;
+	engineConfiguration->triggerInputPins[0] = Gpio::B1;
+	engineConfiguration->camInputs[0] = Gpio::A6;
+ 	
+  	//engineConfiguration->map.sensor.hwChannel = Gpio::Unassigned;
+	//setPPSInputs(Gpio::Unassigned, Gpio::Unassigned);
 
 
-  	engineConfiguration->vehicleSpeedSensorInputPin = Gpio::Unassigned;
+
 	
 	// 5.6k high side/1k low side = 1.56 ratio divider
 	//engineConfiguration->analogInputDividerCoefficient = 1.56f;
@@ -52,7 +50,7 @@ static void setupDefaultSensorInputs() {
 	
 	
 }
-*/
+
 void setBoardConfigOverrides() {
 	setHellenMegaEnPin();
 	setHellenVbatt();
@@ -65,7 +63,7 @@ void setBoardConfigOverrides() {
 }
 
 void setBoardDefaultConfiguration() {
-	//setInjectorPins();
+	setInjectorPins();
 	setIgnitionPins();
 	//setupDefaultSensorInputs();
 	setHellenMMbaro();
