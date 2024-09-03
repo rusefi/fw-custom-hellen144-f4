@@ -34,33 +34,27 @@ static void setupDefaultSensorInputs() {
 	engineConfiguration->camInputs[0] = Gpio::A6;
 	engineConfiguration->clutchDownPin = Gpio::F5;
 	engineConfiguration->clutchDownPinMode = PI_PULLDOWN;
+	engineConfiguration->vbattAdcChannel = EFI_ADC_0;
  	
   	//engineConfiguration->map.sensor.hwChannel = Gpio::Unassigned;
 	//setPPSInputs(Gpio::Unassigned, Gpio::Unassigned);
-
-
-
 	
 	// 5.6k high side/1k low side = 1.56 ratio divider
 	//engineConfiguration->analogInputDividerCoefficient = 1.56f;
-	// set vbatt_divider
+	
 	// 6.34k high side/ 1k low side
 	//engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
-	// Battery sense on PA0
-	//engineConfiguration->vbattAdcChannel = EFI_ADC_0;
+	
 	//engineConfiguration->adcVcc = 3.3f;
-	
-	
+		
 }
 
 void setBoardConfigOverrides() {
 	setHellenMegaEnPin();
 	setHellenVbatt();
-	//setupVbatt();
 	hellenMegaSdWithAccelerometer();
   	setHellenCan();
 	setDefaultHellenAtPullUps();
-	//setHellenSdCardSpi2(); Card is on SPI1
 
 }
 
