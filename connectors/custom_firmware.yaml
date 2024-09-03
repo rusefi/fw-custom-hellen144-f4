@@ -54,7 +54,7 @@ pins:
     type: gnd
 
   - pin: A10
-    id: F5
+    id: C7
     class: outputs
     ts_name: A10 AC Clutch
     function: AC Clutch
