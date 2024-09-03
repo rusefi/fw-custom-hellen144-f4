@@ -133,8 +133,8 @@ pins:
     type: ls
 
   - pin: A23
-    id: F7
-    class: event_inputs
+    id: EFI_ADC_33
+    class: analog_inputs
     ts_name: A23 Knock Sensor
     function: Knock Sensor
     
@@ -161,7 +161,7 @@ pins:
     type: NC
 
   - pin: A28
-    id: F6
+    id: EFI_ADC_32
     class: analog_inputs
     ts_name: A28 Speed Control Command Switch
     function: Speed Control Command Switch
