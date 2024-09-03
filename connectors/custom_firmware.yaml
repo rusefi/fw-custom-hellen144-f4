@@ -1,4 +1,4 @@
-pins:
+putspins:
   - pin: A1
     function: 12V all times
     type: 12V
@@ -134,14 +134,14 @@ pins:
 
   - pin: A23
     id: F7
-    class: inputs
+    class: analog_inputs
     ts_name: A23 Knock Sensor
     function: Knock Sensor
     type: 
 
   - pin: A24
     id: A6
-    class: inputs
+    class: [event_inputs, analog_inputs]
     ts_name: A24 Cam Sensor (CID)
     function: Cam Sensor (CID)
     type: 
@@ -177,7 +177,7 @@ pins:
 
   - pin: A30
     id: F5
-    class: inputs
+    class: switch_inputs
     ts_name: A30 Tunerstudio Name
     function: Clutch Switch Input
     type: din
@@ -318,7 +318,7 @@ pins:
 
   - pin: A56
     id: B1
-    class: inputs
+    class: [event_inputs, analog_inputs]
     ts_name: A56 PIP
     function: PIP
     type: ign
