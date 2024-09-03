@@ -13,7 +13,7 @@ static void setInjectorPins() {
 	engineConfiguration->injectionPins[5] = H144_INJ6;
 }
 */
-/*
+
 static void setIgnitionPins() {
 	engineConfiguration->ignitionPins[0] = H144_IGN7;
 	engineConfiguration->ignitionPins[1] = Gpio::Unassigned;
@@ -22,7 +22,7 @@ static void setIgnitionPins() {
 	engineConfiguration->ignitionPins[4] = Gpio::Unassigned;
 	engineConfiguration->ignitionPins[5] = Gpio::Unassigned;
 }
-*/
+
 /*
 static void setupDefaultSensorInputs() {
 	engineConfiguration->tps1_1AdcChannel = H144_IN_TPS_ANALOG;
@@ -66,7 +66,7 @@ void setBoardConfigOverrides() {
 
 void setBoardDefaultConfiguration() {
 	//setInjectorPins();
-	//setIgnitionPins();
+	setIgnitionPins();
 	//setupDefaultSensorInputs();
 	setHellenMMbaro();
 
