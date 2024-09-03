@@ -6,6 +6,30 @@
 // see comments at declaration in pin_repository.h
 const char * getBoardSpecificPinName(brain_pin_e brainPin) {
 	switch(brainPin) {
+		case Gpio::A6: return "A24 Cam Sensor (CID)";
+		case Gpio::A8: return "A54 WOT Cutout Relay";
+		case Gpio::B1: return "A56 PIP";
+		case Gpio::B9: return "A36 SPOUT";
+		case Gpio::C6: return "A35 Tunerstudio Name";
+		case Gpio::C7: return "A10 AC Clutch";
+		case Gpio::C8: return "A51 Speed Control Vacuum Solenoid";
+		case Gpio::C9: return "A19 Fuel Pump Monitor";
+		case Gpio::D10: return "A13 Injector 4";
+		case Gpio::D11: return "A12 Injector 3";
+		case Gpio::D9: return "A14 Injector 5";
+		case Gpio::F11: return "A3 Vehicle Speed Sensor";
+		case Gpio::F12: return "A15 Injector 6";
+		case Gpio::F13: return "A4 Tacho (IDM)";
+		case Gpio::F3: return "A2 Power Steering Switch";
+		case Gpio::F4: return "A5 Brake Switch Input";
+		case Gpio::F5: return "A30 Tunerstudio Name";
+		case Gpio::G14: return "A32 Tunerstudio Name";
+		case Gpio::G3: return "A21 Idle (IAC)";
+		case Gpio::G4: return "A41 HFP";
+		case Gpio::G5: return "A22 Low Speed Fuel Pump";
+		case Gpio::G6: return "A55 FAN";
+		case Gpio::G7: return "A58 Injector 1";
+		case Gpio::G8: return "A59 Injector 2";
 		default: return nullptr;
 	}
 	return nullptr;

@@ -4,4 +4,40 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
+	Gpio::D11, // A12 Injector 3
+	Gpio::D10, // A13 Injector 4
+	Gpio::D9, // A14 Injector 5
+	Gpio::F12, // A15 Injector 6
+	Gpio::G3, // A21 Idle (IAC)
+	Gpio::G5, // A22 Low Speed Fuel Pump
+	Gpio::G14, // A32 Tunerstudio Name
+	Gpio::G4, // A41 HFP
+	Gpio::G6, // A55 FAN
+	Gpio::G7, // A58 Injector 1
+	Gpio::G8, // A59 Injector 2
+	Gpio::F13, // A4 Tacho (IDM)
+	Gpio::C7, // A10 AC Clutch
+	Gpio::C9, // A19 Fuel Pump Monitor
+	Gpio::C6, // A35 Tunerstudio Name
+	Gpio::B9, // A36 SPOUT
+	Gpio::C8, // A51 Speed Control Vacuum Solenoid
+	Gpio::A8, // A54 WOT Cutout Relay
+// "A12 Injector 3",
+// "A13 Injector 4",
+// "A14 Injector 5",
+// "A15 Injector 6",
+// "A21 Idle (IAC)",
+// "A22 Low Speed Fuel Pump",
+// "A32 Tunerstudio Name",
+// "A41 HFP",
+// "A55 FAN",
+// "A58 Injector 1",
+// "A59 Injector 2",
+// "A4 Tacho (IDM)",
+// "A10 AC Clutch",
+// "A19 Fuel Pump Monitor",
+// "A35 Tunerstudio Name",
+// "A36 SPOUT",
+// "A51 Speed Control Vacuum Solenoid",
+// "A54 WOT Cutout Relay",
 }
