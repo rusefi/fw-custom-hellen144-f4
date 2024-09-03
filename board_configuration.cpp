@@ -15,7 +15,7 @@ static void setInjectorPins() {
 */
 
 static void setIgnitionPins() {
-	engineConfiguration->ignitionPins[0] = H144_IGN7;
+	engineConfiguration->ignitionPins[0] = H144_IGN_7;
 	engineConfiguration->ignitionPins[1] = Gpio::Unassigned;
 	engineConfiguration->ignitionPins[2] = Gpio::Unassigned;
 	engineConfiguration->ignitionPins[3] = Gpio::Unassigned;
