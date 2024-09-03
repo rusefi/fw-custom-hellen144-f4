@@ -1,4 +1,4 @@
-putspins:
+pins:
   - pin: A1
     function: 12V all times
     type: 12V
