@@ -13,15 +13,16 @@ Gpio GENERATED_OUTPUTS = {
 	Gpio::C9, // EECIV 19 Fuel Pump Monitor
 	Gpio::G3, // EECIV 21 Idle (IAC)
 	Gpio::G5, // EECIV 22 Low Speed Fuel Pump
-	Gpio::G14, // EECIV 32 IMRC
+	Gpio::G14, // EECIV 32 Secondaries (IMRC)
 	Gpio::C6, // EECIV 35 Speed Control Vent Solenoid
-	Gpio::B9, // EECIV 36 SPOUT
+	Gpio::B9, // EECIV 36 Spark Out (SPOUT)
 	Gpio::G4, // EECIV 41 High Speed Fuel Pump
 	Gpio::C8, // EECIV 51 Speed Control Vacuum Solenoid
 	Gpio::A8, // EECIV 54 WOT Cutout Relay
-	Gpio::G6, // EECIV 55 FAN
+	Gpio::G6, // EECIV 55 Fan
 	Gpio::G7, // EECIV 58 Injector 1
 	Gpio::G8, // EECIV 59 Injector 2
+	Gpio::E10, // 5V Ref Enable
 // "EECIV 4 Tacho (IDM)",
 // "EECIV 10 AC Clutch",
 // "EECIV 12 Injector 3",
@@ -31,13 +32,14 @@ Gpio GENERATED_OUTPUTS = {
 // "EECIV 19 Fuel Pump Monitor",
 // "EECIV 21 Idle (IAC)",
 // "EECIV 22 Low Speed Fuel Pump",
-// "EECIV 32 IMRC",
+// "EECIV 32 Secondaries (IMRC)",
 // "EECIV 35 Speed Control Vent Solenoid",
-// "EECIV 36 SPOUT",
+// "EECIV 36 Spark Out (SPOUT)",
 // "EECIV 41 High Speed Fuel Pump",
 // "EECIV 51 Speed Control Vacuum Solenoid",
 // "EECIV 54 WOT Cutout Relay",
-// "EECIV 55 FAN",
+// "EECIV 55 Fan",
 // "EECIV 58 Injector 1",
 // "EECIV 59 Injector 2",
+// "5V Ref Enable",
 }
