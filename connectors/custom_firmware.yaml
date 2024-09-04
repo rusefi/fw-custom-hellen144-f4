@@ -162,7 +162,7 @@ pins:
   - pin: EECIV-32
     id: G14
     class: outputs
-    ts_name: EECIV 32 IMRC
+    ts_name: EECIV 32 Secondaries (IMRC)
     function: IMRC
 
   - pin: EECIV-33
@@ -180,7 +180,7 @@ pins:
   - pin: EECIV-36
     id: B9
     class: outputs
-    ts_name: EECIV 36 SPOUT
+    ts_name: EECIV 36 Spark Out (SPOUT)
     function: SPOUT
 
   - pin: EECIV-37
@@ -225,7 +225,7 @@ pins:
   - pin: EECIV-45
     id: EFI_ADC_10
     class: analog_inputs
-    ts_name: EECIV 45 BAP
+    ts_name: EECIV 45 Barometric Sensor (BAP)
     function: BAP
 
   - pin: EECIV-46
@@ -270,13 +270,13 @@ pins:
   - pin: EECIV-55
     id: G6
     class: outputs
-    ts_name: EECIV 55 FAN
+    ts_name: EECIV 55 Fan
     function: FAN
 
   - pin: EECIV-56
     id: B1
     class: event_inputs
-    ts_name: EECIV 56 PIP
+    ts_name: EECIV 56 (PIP)
     function: PIP
 
   - pin: EECIV-57
