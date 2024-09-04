@@ -184,6 +184,9 @@ pins:
     function: SPOUT
 
   - pin: EECIV-37
+    id: EFI_ADC_5
+    class: analog_inputs
+    ts_name: EECIV 37 VBATT
     function: 12V in Start and Run
 
   - pin: EECIV-38
@@ -293,3 +296,9 @@ pins:
 
   - pin: EECIV-60
     function: Power Ground
+
+  - pin: PE10
+    id: E10
+    class:  outputs
+    ts_name: 5V Ref Enable
+    function: 5V Ref Enable
