@@ -15,3 +15,5 @@ DDEFS += $(PRIMARY_COMMUNICATION_PORT_USART2)
 
 # this includes knock and mux control settings
 include $(BOARDS_DIR)/hellen/hellen-common-mega144.mk
+
+ONBOARD_MEMS_TYPE=LIS2DH12
