@@ -50,7 +50,7 @@ static void setupDefaultSensorInputs() {
 }
 
 void setBoardConfigOverrides() {
-	setHellenMegaEnPin();
+	//setHellenMegaEnPin();
 	setHellenVbatt();
 	hellenMegaSdWithAccelerometer();
   	setHellenCan();
