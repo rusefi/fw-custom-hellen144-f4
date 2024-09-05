@@ -1152,7 +1152,7 @@
 #define maf_sensor_type_e_CUSTOM 0
 #define maf_sensor_type_e_DensoTODO 3
 #define maf_sensor_type_e_enum "v0", "v1", "v2", "v3"
-#define MAIN_HELP_URL "http://halee.ca/shoefi"
+#define MAIN_HELP_URL "http://sho.halee.ca/shoefi"
 #define MAP_ANGLE_SIZE 8
 #define MAP_sensor_config_s_size 140
 #define MAP_UPPER_LIMIT 255
@@ -1297,7 +1297,7 @@
 #define show_Proteus_presets false
 #define show_test_presets false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3098492418
+#define SIGNATURE_HASH 1966288201
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1691,7 +1691,7 @@
 #define ts_show_odd_fire true
 #define ts_show_oil_pressure_sensor true
 #define ts_show_oil_temp_sensor true
-#define ts_show_onboard_accelerometer false
+#define ts_show_onboard_accelerometer true
 #define ts_show_output_diag false
 #define ts_show_popular_vehicles true
 #define ts_show_reboot_to_dfu true
@@ -1743,7 +1743,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.09.05.shoefi.3098492418"
+#define TS_SIGNATURE "rusEFI main.2024.09.05.shoefi.1966288201"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
