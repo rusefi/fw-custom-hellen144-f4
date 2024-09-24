@@ -1294,7 +1294,7 @@
 #define show_Proteus_presets false
 #define show_test_presets false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1849866757
+#define SIGNATURE_HASH 1447839672
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1600,11 +1600,13 @@
 #define ts_show_air_conditioning true
 #define ts_show_alternator true
 #define ts_show_analog_divider true
+#define ts_show_analog_input_settings true
 #define ts_show_aux_connections true
 #define ts_show_aux_sensors true
 #define ts_show_auxserial_pins true
 #define ts_show_bank2_cam1 true
 #define ts_show_bank2_cam2 true
+#define ts_show_brake_pedal_pin true
 #define ts_show_cam2 true
 #define ts_show_can2 true
 #define ts_show_can_bitrate true
@@ -1644,6 +1646,7 @@
 #define ts_show_experimental true
 #define ts_show_fan2_settings true
 #define ts_show_firing_order true
+#define ts_show_flex_inverted true
 #define ts_show_forced_induction true
 #define ts_show_ford_toyota_tps_pps true
 #define ts_show_fuel_level_sensor true
@@ -1681,6 +1684,7 @@
 #define ts_show_injection_mode true
 #define ts_show_injection_phase true
 #define ts_show_injectionPinMode false
+#define ts_show_intake_cam_edge true
 #define ts_show_intake_vvt_direction true
 #define ts_show_k_line false
 #define ts_show_l9779 false
@@ -1721,9 +1725,11 @@
 #define ts_show_starter_disable true
 #define ts_show_startup_map_baro_grab true
 #define ts_show_status_leds true
+#define ts_show_strokes true
 #define ts_show_sync_cam true
 #define ts_show_tachometer true
 #define ts_show_tcu false
+#define ts_show_throttle_switch true
 #define ts_show_tle8888 false
 #define ts_show_top_level_can_menu true
 #define ts_show_tps2 true
@@ -1732,6 +1738,7 @@
 #define ts_show_trigger_advanced true
 #define ts_show_trigger_comparator false
 #define ts_show_trigger_overrides true
+#define ts_show_trigger_pins true
 #define ts_show_tunerstudio_port true
 #define ts_show_vbatt true
 #define ts_show_vehicle_speed_sensor true
@@ -1744,7 +1751,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.09.23.hellen-f4-community.1849866757"
+#define TS_SIGNATURE "rusEFI main.2024.09.24.hellen-f4-community.1447839672"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
