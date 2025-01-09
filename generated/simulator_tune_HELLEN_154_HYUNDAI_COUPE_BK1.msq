@@ -223,7 +223,7 @@
         <constant digits="0" name="boostControlSafeDutyCycle" units="%">0.0</constant>
         <constant name="mafAdcChannel">"NONE"</constant>
         <constant digits="0" name="acrRevolutions" units="">5.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0250108E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.0250109E7</constant>
         <constant digits="3" name="adcVcc" units="volts">3.0</constant>
         <constant digits="0" name="mapCamDetectionAnglePosition" units="Deg">0.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -3625,13 +3625,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="ignBlends1_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="ignBlends1_blendParameter">"Zero"</constant>
         <constant name="ignBlends1_yAxisOverride">"Zero"</constant>
@@ -3677,13 +3677,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="ignBlends2_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="ignBlends2_blendParameter">"Zero"</constant>
         <constant name="ignBlends2_yAxisOverride">"Zero"</constant>
@@ -3729,13 +3729,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="ignBlends3_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="ignBlends3_blendParameter">"Zero"</constant>
         <constant name="ignBlends3_yAxisOverride">"Zero"</constant>
@@ -3781,13 +3781,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="ignBlends4_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="ignBlends4_blendParameter">"Zero"</constant>
         <constant name="ignBlends4_yAxisOverride">"Zero"</constant>
@@ -3833,13 +3833,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="veBlends1_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="veBlends1_blendParameter">"Zero"</constant>
         <constant name="veBlends1_yAxisOverride">"Zero"</constant>
@@ -3885,13 +3885,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="veBlends2_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="veBlends2_blendParameter">"Zero"</constant>
         <constant name="veBlends2_yAxisOverride">"Zero"</constant>
@@ -3937,13 +3937,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="veBlends3_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="veBlends3_blendParameter">"Zero"</constant>
         <constant name="veBlends3_yAxisOverride">"Zero"</constant>
@@ -3989,13 +3989,13 @@ end</constant>
 </constant>
         <constant cols="1" digits="0" name="veBlends4_rpmBins" rows="8">
          0.0
-         999.0
-         1999.0
-         2999.0
-         3999.0
-         4999.0
-         5999.0
-         6999.0
+         1000.0
+         2000.0
+         3000.0
+         4000.0
+         5000.0
+         6000.0
+         7000.0
 </constant>
         <constant name="veBlends4_blendParameter">"Zero"</constant>
         <constant name="veBlends4_yAxisOverride">"Zero"</constant>
@@ -4839,7 +4839,7 @@ end</constant>
          0.0
 </constant>
     </page>
-    <versionInfo firmwareInfo="20240830" nPages="1" signature="rusEFI main.2025.01.08.shoefi.2521290016" version="5.0"/>
+    <versionInfo firmwareInfo="20240830" nPages="1" signature="rusEFI main.2025.01.09.shoefi.2521290016" version="5.0"/>
     <bibliography author="rusEFI 20240830" writeDate="date"/>
     <settings/>
     <userComments/>
