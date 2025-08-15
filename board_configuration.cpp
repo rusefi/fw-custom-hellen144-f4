@@ -1,9 +1,9 @@
 #include "pch.h"
 #include "hellen_meta.h"
 #include "defaults.h"
+#include "board_overrides.h"
 
-// board-specific configuration setup
-void setBoardDefaultConfiguration() {
+static void customBoardDefaultConfiguration() {
     setHellenVbatt();
     setHellenCan();
     setDefaultHellenAtPullUps();
@@ -27,4 +27,8 @@ void setBoardDefaultConfiguration() {
 //    	engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
 
 //	engineConfiguration->adcVcc = 3.3f;
+}
+
+void setup_custom_board_overrides() {
+	custom_board_DefaultConfiguration = customBoardDefaultConfiguration;
 }
