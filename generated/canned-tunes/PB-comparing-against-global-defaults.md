@@ -7,6 +7,8 @@
     engineConfiguration->injectionTimingMode = Center;
     // default "Single Coil"
     engineConfiguration->ignitionMode = IM_INDIVIDUAL_COILS;
+    // default 2.0
+    engineConfiguration->displacement = 1.6;
     // default 0.0
     engineConfiguration->globalTriggerAngleOffset = 115;
     // default "Inactive"
@@ -177,6 +179,8 @@
     engineConfiguration->etb.dFactor = 0.1855;
     // default "false"
     engineConfiguration->disableEtbWhenEngineStopped = true;
+    // default 1.0
+    engineConfiguration->etbJamTimeout = 0;
     // default "Launch Button"
     engineConfiguration->launchActivationMode = CLUTCH_INPUT_LAUNCH;
     // default "false"

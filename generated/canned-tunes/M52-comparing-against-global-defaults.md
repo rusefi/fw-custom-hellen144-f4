@@ -7,7 +7,7 @@
     engineConfiguration->ignitionMode = IM_WASTED_SPARK;
     // default 4.0
     engineConfiguration->cylindersCount = 6;
-    // default 1.6
+    // default 2.0
     engineConfiguration->displacement = 3;
     // default 0.0
     engineConfiguration->trigger.customTotalToothCount = 3;
@@ -167,6 +167,8 @@
     engineConfiguration->boostControlMinTps = 0;
     // default 110.0
     engineConfiguration->boostControlMinMap = 0;
+    // default 1.0
+    engineConfiguration->etbJamTimeout = 0;
     // default "false"
     engineConfiguration->coastingFuelCutEnabled = true;
     // default 60.0

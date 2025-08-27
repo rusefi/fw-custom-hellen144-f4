@@ -11,7 +11,7 @@
     engineConfiguration->ignOverrideMode = AFR_Tps;
     // default 4.0
     engineConfiguration->cylindersCount = 6;
-    // default 1.6
+    // default 2.0
     engineConfiguration->displacement = 3.5;
     // default "60-2"
     engineConfiguration->trigger.type = TT_NISSAN_VQ35;
@@ -225,6 +225,8 @@
     engineConfiguration->disableEtbWhenEngineStopped = true;
     // default 100.0
     engineConfiguration->etbMaximumPosition = 90;
+    // default 1.0
+    engineConfiguration->etbJamTimeout = 0;
     // default 3000.0
     engineConfiguration->launchRpm = 3800;
     // default "false"

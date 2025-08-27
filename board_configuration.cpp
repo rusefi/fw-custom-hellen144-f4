@@ -1,8 +1,6 @@
 #include "pch.h"
 #include "hellen_meta.h"
 #include "defaults.h"
-//#include "hellen_leds_144.cpp"
-
 
 static void setInjectorPins() {
 	engineConfiguration->injectionPins[0] = Gpio::G7;
@@ -13,7 +11,6 @@ static void setInjectorPins() {
 	engineConfiguration->injectionPins[5] = Gpio::F12;
 }
 
-
 static void setIgnitionPins() {
 	engineConfiguration->ignitionPins[0] = Gpio::B9;
 	engineConfiguration->ignitionPins[1] = Gpio::Unassigned;
@@ -22,7 +19,6 @@ static void setIgnitionPins() {
 	engineConfiguration->ignitionPins[4] = Gpio::Unassigned;
 	engineConfiguration->ignitionPins[5] = Gpio::Unassigned;
 }
-
 
 static void setupDefaultSensorInputs() {
 	engineConfiguration->tps1_1AdcChannel = EFI_ADC_4;
@@ -46,24 +42,21 @@ static void setupDefaultSensorInputs() {
 	//engineConfiguration->vbattDividerCoeff = (6.34 + 1) / 1;
 	
 	//engineConfiguration->adcVcc = 3.3f;
-		
 }
 
 void setBoardConfigOverrides() {
-	//setHellenMegaEnPin();
 	setHellenVbatt();
-	hellenMegaSdWithAccelerometer();
-  	setHellenCan();
+	setHellenCan();
 	setDefaultHellenAtPullUps();
-
 }
 
 void setBoardDefaultConfiguration() {
+	// Set up injector and ignition pins for Ford Taurus SHO
 	setInjectorPins();
 	setIgnitionPins();
 	setupDefaultSensorInputs();
-	setHellenMMbaro();
-
+	
+	// Ford Taurus SHO specific configurations
 	engineConfiguration->displayLogicLevelsInEngineSniffer = true;
 	engineConfiguration->globalTriggerAngleOffset = 9;
 	engineConfiguration->enableSoftwareKnock = true;
@@ -81,11 +74,12 @@ void setBoardDefaultConfiguration() {
 	engineConfiguration->tachOutputPin = Gpio::F13;
 	engineConfiguration->enableVerboseCanTx = true;
 
+	// Additional Ford Taurus SHO specific configurations
 	setCrankOperationMode();
-	
 	engineConfiguration->injectorCompensationMode = ICM_FixedRailPressure;
 	setCommonNTCSensor(&engineConfiguration->clt, HELLEN_DEFAULT_AT_PULLUP);
 	setCommonNTCSensor(&engineConfiguration->iat, HELLEN_DEFAULT_AT_PULLUP);
-    	setTPS1Calibration(75, 900);
+	setTPS1Calibration(75, 900);
 	hellenWbo();
+	setHellenMMbaro();
 }

@@ -3,7 +3,7 @@
 // canned tune https://rusefi.com/online/view.php?msq=1621
 
 ```
-    // default 1.6
+    // default 2.0
     engineConfiguration->displacement = 1.493;
     // default "60-2"
     engineConfiguration->trigger.type = TT_TOOTHED_WHEEL;
@@ -85,6 +85,8 @@
     engineConfiguration->etbFunctions[0] = DC_None;
     // default "Throttle 2"
     engineConfiguration->etbFunctions[1] = DC_None;
+    // default 1.0
+    engineConfiguration->etbJamTimeout = 0;
     // default 250.0
     engineConfiguration->gppwm[0].pwmFrequency = 0;
     // default 60.0

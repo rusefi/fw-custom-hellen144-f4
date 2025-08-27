@@ -211,8 +211,6 @@
     engineConfiguration->tunerStudioSerialSpeed = 115200;
     // default "500kbps"
     engineConfiguration->can2BaudRate = B100KBPS;
-    // default 0.0
-    engineConfiguration->auxSerialSpeed = 115200;
     // default "Executor"
     engineConfiguration->debugMode = DBG_STEPPER_IDLE_CONTROL;
     // default 7000.0
@@ -279,6 +277,8 @@
     engineConfiguration->etbFreq = 2000;
     // default 100.0
     engineConfiguration->etbMaximumPosition = 97;
+    // default 1.0
+    engineConfiguration->etbJamTimeout = 0;
     // default "false"
     engineConfiguration->launchControlEnabled = true;
     // default 30.0

@@ -15,7 +15,7 @@
     engineConfiguration->ignitionMode = IM_WASTED_SPARK;
     // default 0.0
     engineConfiguration->fixedTiming = 10;
-    // default 1.6
+    // default 2.0
     engineConfiguration->displacement = 2.2;
     // default 0.0
     engineConfiguration->globalTriggerAngleOffset = 72;
@@ -219,8 +219,6 @@
     engineConfiguration->can2BaudRate = B100KBPS;
     // default "None"
     engineConfiguration->canNbcType = CAN_BUS_W202_C180;
-    // default 0.0
-    engineConfiguration->auxSerialSpeed = 115200;
     // default "Executor"
     engineConfiguration->debugMode = DBG_STEPPER_IDLE_CONTROL;
     // default 7000.0
@@ -285,6 +283,8 @@
     engineConfiguration->etbFreq = 2000;
     // default 100.0
     engineConfiguration->etbMaximumPosition = 97;
+    // default 1.0
+    engineConfiguration->etbJamTimeout = 0;
     // default "false"
     engineConfiguration->launchControlEnabled = true;
     // default 30.0
