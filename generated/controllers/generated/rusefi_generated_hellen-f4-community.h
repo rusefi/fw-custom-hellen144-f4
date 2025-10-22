@@ -1539,7 +1539,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 1684203721
+#define SIGNATURE_HASH 471588101
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1945,6 +1945,7 @@
 #define ts_show_ecu_stimulator true
 #define ts_show_ego2 true
 #define ts_show_egt true
+#define ts_show_enableKnockSpectrogram true
 #define ts_show_engine_code true
 #define ts_show_engine_make true
 #define ts_show_etb true
@@ -2010,6 +2011,7 @@
 #define ts_show_ign_key_analog_input false
 #define ts_show_ign_key_menu true
 #define ts_show_ign_key_switch false
+#define ts_show_ignitionMode true
 #define ts_show_ignitionOutputs true
 #define ts_show_ignitionPinMode true
 #define ts_show_inj_diag false
@@ -2018,6 +2020,7 @@
 #define ts_show_injection_phase true
 #define ts_show_injectionPinMode false
 #define ts_show_InjectorFlowLinearizationTable false
+#define ts_show_injTest true
 #define ts_show_intake_cam_edge true
 #define ts_show_intake_vvt_direction true
 #define ts_show_jam_detection true
@@ -2052,6 +2055,7 @@
 #define ts_show_second_bank true
 #define ts_show_sent true
 #define ts_show_software_knock false
+#define ts_show_sparkHardwareLatencyCorrection true
 #define ts_show_speedo_settings true
 #define ts_show_spi true
 #define ts_show_spi1_enable true
@@ -2080,14 +2084,17 @@
 #define ts_show_throttle_switch true
 #define ts_show_tle8888 false
 #define ts_show_top_level_can_menu true
+#define ts_show_torque_model true
 #define ts_show_tps2 true
 #define ts_show_tps_sent false
 #define ts_show_trigger_advanced true
+#define ts_show_trigger_console true
 #define ts_show_trigger_gap_override_flag true
 #define ts_show_trigger_overrides true
 #define ts_show_trigger_pins true
 #define ts_show_tsp_pps_limits true
 #define ts_show_tunerstudio_port true
+#define ts_show_twoWireBatchIgnition true
 #define ts_show_useRunningMathForCranking true
 #define ts_show_useSeparateVeForIdle true
 #define ts_show_vbatt true
@@ -2098,6 +2105,7 @@
 #define ts_show_veBlends4 true
 #define ts_show_vehicle_name true
 #define ts_show_vehicle_speed_sensor true
+#define ts_show_virtual_dyno false
 #define ts_show_vr_threshold_2 false
 #define ts_show_vr_threshold_all false
 #define ts_show_vr_threshold_pins true
@@ -2108,7 +2116,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.10.21.hellen-f4-community.1684203721"
+#define TS_SIGNATURE "rusEFI main.2025.10.22.hellen-f4-community.471588101"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
