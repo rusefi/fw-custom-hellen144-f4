@@ -2139,7 +2139,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.12.30.hellen-f4-community.685455735"
+#define TS_SIGNATURE "rusEFI main.2025.12.31.hellen-f4-community.685455735"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
