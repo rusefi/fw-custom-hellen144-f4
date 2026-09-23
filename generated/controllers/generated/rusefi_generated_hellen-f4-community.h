@@ -2295,7 +2295,7 @@
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
 #define ts_show_wbo_canbus_set_type false
-#define TS_SIGNATURE "rusEFI main.2026.09.22.hellen-f4-community.4021994144"
+#define TS_SIGNATURE "rusEFI main.2026.09.23.hellen-f4-community.4021994144"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
