@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-cd ext/rusefi/firmware/
-bash bin/compile.sh ../../../meta-info.env ../simulator/build/rusefi_simulator
+set -euo pipefail
+exec bash "$(dirname "${BASH_SOURCE[0]}")/compile_firmware.sh" ../simulator/build/rusefi_simulator.linux "$@"

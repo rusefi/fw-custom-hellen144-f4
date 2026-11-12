@@ -1,8 +1,6 @@
 BOARDCPPSRC =  $(BOARD_DIR)/board_configuration.cpp \
 
 
-BOARDINC += $(BOARD_DIR)/generated/controllers/generated
-
 # defines SHORT_BOARD_NAME
 include $(BOARD_DIR)/meta-info.env
 
